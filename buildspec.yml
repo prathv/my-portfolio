@@ -10,6 +10,6 @@
   artifacts:
     files:
       - index.html
-      - favicom.ico
+      - favicon.ico
       - styles/main.css
       - images/*
