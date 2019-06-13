@@ -9,7 +9,4 @@ phases:
       - echo Nothing to do yet
 artifact:
   files:
-    - index.html
-    - favicom.ico
-    - styles/main.css
-    - images/*
+    - '**/*'
