@@ -5,6 +5,8 @@
       runtime-versions:
        nodejs: 10
     build:
+      commands:
+       - echo Nothing to do yet
   artifacts:
     files:
       - index.html
