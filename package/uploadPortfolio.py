@@ -2,6 +2,8 @@ import zipfile
 import boto3
 from io import BytesIO
 
+sns = boto3.resource("sns")
+topic = sns.Topic("arn:aws:sns:us-west-2:356227741561:MyPortfolioTopic")
 s3 = boto3.client("s3")
 
 build_bucket = "portfoliobuild.prathveerrai.info"
