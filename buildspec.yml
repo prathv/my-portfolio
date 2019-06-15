@@ -13,3 +13,9 @@
       - favicon.ico
       - styles/main.css
       - images/*
+
+
+  sam deploy \
+  --template-file package.yml \
+  --stack-name portfolioLambdaDeploy \
+  --capabilities CAPABILITY_IAM

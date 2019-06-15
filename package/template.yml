@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Sam deployment for portfolio
+
+Resources:
+  PrtFolioFunction:
+      Type: AWS::Serverless::Function
+      Properties:
+          CodeUri: ../package
+          Runtime: python3.7
+          Handler: lambda_handler.lambda_handler
+          MemorySize: 128
+          Role: "arn:aws:iam::356227741561:role/LambdaS3Access"
+
