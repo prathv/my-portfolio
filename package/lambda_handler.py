@@ -23,3 +23,4 @@ def lambda_handler(event,context):
         return "Completed Running new deployment"
     except:
         topic.publish(Subject="Portfolio Update Failed",Message="Hey Patty, failed deploying new updated portfolio")
+        raise

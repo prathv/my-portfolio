@@ -3,7 +3,7 @@ Description: Sam deployment for portfolio
 Resources:
   PrtFolioFunction:
     Properties:
-      CodeUri: s3://portfoliobuild.prathveerrai.info/2bb484da11ab811dce41c83e7a39d606
+      CodeUri: s3://portfoliobuild.prathveerrai.info/bad71514bedd752a7cf9eda4ac418f33
       Handler: lambda_handler.lambda_handler
       MemorySize: 128
       Role: arn:aws:iam::356227741561:role/LambdaS3Access
