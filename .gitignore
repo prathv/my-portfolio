@@ -1,3 +1,6 @@
 .idea
 myportfolio.iml
 __init__.py
+.npm
+dist
+node_modules

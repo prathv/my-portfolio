@@ -4,12 +4,17 @@
     install:
       runtime-versions:
        nodejs: 10
+    pre_build:
+      commands:
+        - npm install
+        - npm test
     build:
       commands:
-       - echo Nothing to do yet
+       - npm run webpack
   artifacts:
     files:
       - index.html
       - favicon.ico
       - styles/main.css
       - images/*
+      - dist/bundle.js
