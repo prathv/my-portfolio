@@ -19,7 +19,7 @@ def lambda_handler(event,context):
         build_bucket = location["bucketName"]
         portfolio_bucket = "portfolio.prathveerrai.info"
         portfolio_zip = BytesIO()
-        s3.download_fileobj(build_bucket,"portfoliobuild.zip",portfolio_zip)
+        s3.Bucket(build_bucket).download_file("portfoliobuild.zip", "portfoliobuild.zip")
 
 
         with zipfile.ZipFile(portfolio_zip) as myzip:
