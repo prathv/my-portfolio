@@ -22,7 +22,7 @@ def lambda_handler(event,context):
         print("Build portfolio from "+location["bucketName"])
         s3 = boto3.client("s3")
         build_bucket = location["bucketName"]
-        portfolio_bucket = "portfolio.prathveer.info"
+        portfolio_bucket = "portfolio.prathveerrai.info"
         portfolio_zip = BytesIO()
         s3.download_fileobj(build_bucket,"portfoliobuild.zip",portfolio_zip)
 
