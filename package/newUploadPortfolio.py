@@ -5,7 +5,7 @@ from io import BytesIO
 
 def lambda_handler(event,context):
     location = {
-        "bucketName" : "portfoliobuild.prathveer.info",
+        "bucketName" : "portfoliobuild.prathveerrai.info",
         "objectKey" : "portfoliobuild.zip"
     }
     sns = boto3.resource("sns")
