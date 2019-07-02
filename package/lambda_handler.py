@@ -26,6 +26,7 @@ def lambda_handler(event,context):
             for nm in myzip.namelist():
                 obj = myzip.open(nm,"r")
                 s3.upload_fileobj(obj,portfolio_bucket,nm)
+                portfolio_bucket.Object(nm).Acl().put(ACL='public-read')
 
         topic.publish(Subject="Portfolio Update Complete",Message="Hey Patty, completed deploying new updated portfolio")
         return "Completed Running new deployment"
